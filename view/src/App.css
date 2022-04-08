@@ -1,0 +1,50 @@
+.App {
+  text-align: center;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* background: linear-gradient(to right, #453a3a 0%, #282424 55%); */
+  /* background: rgb(45,45,45); */
+  /* background: rgb(66,66,66); */
+  /* background: rgb(74,74,74); */
+  background: linear-gradient(to bottom right, #282828 24%, #121111 83%);
+  height: 100vh;
+  /* background-color: #537895;
+  background-image: linear-gradient(315deg, #537895 0%, #09203f 74%); */
+  /* background-color: #29539b;
+  background-image: linear-gradient(315deg, #29539b 0%, #1e3b70 74%); */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: red;
+  background: yellow;
+}
+div::selection{
+  background: yellow;
+}
+
+#anaks-plot{
+  width: 100%;
+  height: 400;
+  background-color: rgb(28,28,28);
+  position: absolute;
+  bottom: 0;
+}
+
+#test{
+  background-color: red;
+}

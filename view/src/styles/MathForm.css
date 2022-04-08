@@ -1,0 +1,113 @@
+/* MATH-INPUT */
+.math-div{
+  height: 40vh;
+}
+.math-form {
+  background: rgb(2,2,2,0.3);
+  border-radius: 8px;
+  box-shadow: 0px 0px 32px -6px rgba(0,0,0,0.75);
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  width: 80%;
+  height: 20%;
+  transform: translate(-50%, -100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.math-form .math-latex{
+  color:#7CFFCB;
+  opacity: 0.6;
+  font-family: 'Roboto Mono';
+  font-size: 2.5vmin;
+  padding: 2px;
+  width: 100%;
+  max-width: 100%;
+  text-align: start;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 30px;
+  position: absolute;
+  top:0;
+  text-overflow: ellipsis;
+}
+
+.math-form .math-latex .copy-button{
+  cursor: pointer;
+  background: rgb(2,2,2,0.6);
+  border-radius: 12px;
+  padding:0 20px 0 20px;
+  font-size: 2vmin;
+  opacity: 0.9;
+}
+.math-form .math-latex .copy-button:hover{
+  background: rgba(65, 63, 63, 0.6);
+}
+
+.math-input{
+  display:flex;
+  align-items: center;
+  max-width: 100%;
+}
+.math-form .math-input .math-textbox{
+  border: none;
+  padding: 10px 0px 10px 0px;
+  color: #f5f6fa;
+  font-size: 3vmin;
+  text-shadow: 2px 2px black;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  font-family: 'Roboto Mono';
+  flex:65%;
+  max-width: 65%;
+}
+
+
+.math-form .math-input .equal-btn{
+  text-decoration: none;
+  list-style: none;
+  color:white;
+  font-size: 4vmin;
+  flex:5%;
+  cursor: pointer;
+}
+
+.math-form .math-input .result-label{
+  flex:30%;
+  font-size: 6vmin;
+  padding: 5px;
+  /* text-shadow: 0 0 1em rgb(15, 212, 31), 0 0 0.2em rgb(21, 231, 126); */
+  color: #7CFFCB;
+}
+
+.notification{
+  font-size: 2vh;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
+}
+
+.mq-math-mode * {
+  border-color: #7CFFCB !important;
+  outline:none !important;
+}
+
+.drawer{
+  background-color: black;
+  width: 20%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top:0;
+  z-index: 2;
+  opacity: 1;
+  color: white;
+  padding: 4% 1% 1% 1%;
+  max-height: 100%;
+  overflow: scroll;
+  box-shadow: -14px 7px 115px -102px rgba(74,161,66,1);
+  background-color: #16191a;
+  border-left: 1px solid #2d3436;
+}
